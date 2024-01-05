@@ -1,3 +1,3 @@
-# GITHUB INTRO by SUJAL
+# GITHUB by SUJAL
 
 I'm learning Github*********!!!!!!!!*********
