@@ -12,4 +12,8 @@ practising how i can edit in vs code. and put it on github using Github desktop.
 
 yes it worked.
 
+its working for both machine to github
+and github to machine 
+i liked this
+learnt a new one today
 
