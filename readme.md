@@ -1,4 +1,4 @@
-# GITHUB by SUJAL
+# GITHUB by SUJAL Shinde
 
 I'm learning Github.
 practising how i can edit in vs code. and put it on github using Github desktop..
