@@ -10,3 +10,6 @@ practising how i can edit in vs code. and put it on github using Github desktop.
 5. click on commit to main
 6. push it using ctrl+p
 
+yes it worked.
+
+
