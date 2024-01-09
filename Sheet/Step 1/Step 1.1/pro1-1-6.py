@@ -7,16 +7,16 @@ def recur(n):
 n = int(input())
 print(recur(n))
 
-#answer 2 no time complexity issue
+#answer 2 - no time complexity issue
 
-def recur_memo(n, memo={}):
+def fibo(n, a={}):
     if n <= 1:
         return n
 
-    if n not in memo :
-        memo[n] = recur_memo(n - 1, memo) + recur_memo(n - 2, memo)
+    if n not in a :
+        a[n] = fibo(n - 1, a) + fibo(n - 2, a)
 
-    return memo[n]
+    return a[n]
 
 n = int(input())
-print(recur_memo(n))
+print(fibo(n))
