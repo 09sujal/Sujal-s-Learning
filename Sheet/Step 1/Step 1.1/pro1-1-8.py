@@ -1,19 +1,20 @@
 # my code 
-# def option(n):
-#     a, b = map(int, input().split())
+def option(n):
+    a, b = map(int, input().split())
 
-#     if n==1:
-#         if a > b:
-#             print(a)
-#         else:
-#             print(b)
+    if n==1:
+        if a > b:
+            print(a)
+        else:
+            print(b)
 
-#     if n==2:
-#         temp = a
-#         a = b
-#         b = temp
+    if n==2:
+        temp = a
+        a = b
+        b = temp
 
 
+#another code
 
 # Coding Challenge -1
 def Maximum(a, b):
