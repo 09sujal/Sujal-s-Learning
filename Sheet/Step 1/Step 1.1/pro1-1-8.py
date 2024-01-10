@@ -1,20 +1,20 @@
-# my code 
-def option(n):
-    a, b = map(int, input().split())
+# # my code 
+# def option(n):
+#     a, b = map(int, input().split())
 
-    if n==1:
-        if a > b:
-            print(a)
-        else:
-            print(b)
+#     if n==1:
+#         if a > b:
+#             print(a)
+#         else:
+#             print(b)
 
-    if n==2:
-        temp = a
-        a = b
-        b = temp
+#     if n==2:
+#         temp = a
+#         a = b
+#         b = temp
 
 
-#another code
+#another code 2 for the same problem in python
 
 # Coding Challenge -1
 def Maximum(a, b):
@@ -40,24 +40,26 @@ else:
     print("Invalid choice. Please enter either 1 or 2.")
 
 
-#Work on these
-def max(a,b):
+#Another Code 3
+def maximum(a,b):
     return max(a,b)
-
-def swap(a,b):
-    return (b,a)
-
-
+     
+def swaping(c,d):
+    # temp = c
+    # c = d
+    # d = temp
+    # return (c,d)
+    # OR
+    return d,c
+  
 n = int(input())
 
 if n==1:
-    y,z=map(int, input().split())
-    result=max(y,z)
-    print(result)
+    a,b=map(int, input().split())
+    result = maximum(a,b)
 
 elif n==2:
-    y,z=map(int, input().split())
-    result=swap(y,z)
-    print(result)
+    c,d=map(int, input().split())
+    result=swaping(c,d)
 
-
+print(result)
