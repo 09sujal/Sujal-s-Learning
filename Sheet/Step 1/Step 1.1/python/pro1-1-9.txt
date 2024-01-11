@@ -2,5 +2,5 @@ For any algorithm,
 
 if input size is increasing and the output is taking same time for any input, then time complexity will be O(1) also known as Constant time complexity.
 
-if input size is increasing and the output time is increasing with input size (input size is in directly proportion to Output time), then time complexity will be O(n).
+if input size ias increasing and the output time is increasing with input size (input size is in directly proportion to Output time), then time complexity will be O(n).
 

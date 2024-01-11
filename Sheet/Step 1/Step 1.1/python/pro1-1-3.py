@@ -1,12 +1,12 @@
-from typing import *
+# from typing import *
 
-def compareIfElse(a: int, b: int):
-        if a>b:
-            return 'greater'
-        elif a<b:
-            return 'smaller'
-        else:
-            return 'equal'
+# def compareIfElse(a: int, b: int):
+#         if a>b:
+#             return 'greater'
+#         elif a<b:
+#             return 'smaller'
+#         else:
+#             return 'equal'
         
 #with constarints
 def compareIfElse(a: int, b: int) -> str:
