@@ -14,21 +14,27 @@ def one():
         print(-1)
 
 def two():
-    if type=='Integer':
-        return 4
-    elif type=='Long':
-        return 8
-    elif type=='Float':
-        return 4
-    elif type=='Double':
-        return 8
-    elif type=='Character':
-        return 1
-    else:
-        return -1
+    print("This Program will return Size of Datatype\n Enter Integer, Long, Float, Double or Character.")
+
+    def result(type):
+        if type=='Integer':
+           return 4
+        elif type=='Long':
+            return 8
+        elif type=='Float':
+            return 4
+        elif type=='Double':
+            return 8
+        elif type=='Character':
+            return 1
+        else:
+            return -1
+    type = str(input())
+    print(result(type))
+
     
 def three():
-    def compareIfElse(a: int, b: int) -> str:
+    def gl(a,b):
         if -10**5 <= a <= 10**5 and -10**5 <= b <= 10**5:
             if a > b:
                 return "greater"
@@ -36,7 +42,14 @@ def three():
                 return 'smaller'
             else:
                 return 'equal'
-            
+        else:
+            print("Numbers are not within the valid range.")
+
+    print("This program will if A is greater, smaller or A nd B are equal\n Enter A and B.")
+    a = int(input())
+    b = int(input())
+    print(gl(a,b))
+    
 def four():
     def areaSwitchCase(ch: int, a: List[float]):
         if ch==1:
@@ -44,12 +57,12 @@ def four():
         elif ch==2:
             area = a[0]*a[1]    
         
-        return "{:.5f}".format(area)
+        print("{:.5f}".format(area))
+    
 
 def five():
     print('''What are arrays, strings?
-            Edit
-
+            
             Arrays:
             Arrays are collections of elements of the same type, accessible via indices. They allow efficient storage and retrieval of multiple values under a single variable name. In Python, lists often serve as arrays.
 
@@ -96,10 +109,10 @@ def seven():
         n = n//10
     print(e," ",o)
 
+
 def eight():
     def maximum(a,b):
-        return max(a,b)
-        
+        return max(a,b)        
     def swaping(c,d):
         # temp = c
         # c = d
