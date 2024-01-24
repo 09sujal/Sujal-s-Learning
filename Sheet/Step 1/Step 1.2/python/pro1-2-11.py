@@ -8,7 +8,7 @@
 #             else:
 #                 print('1', end=' ')
 #         print()
-#         star +=1
+#         star +=1  
 
 # z = 5
 # star(z)
