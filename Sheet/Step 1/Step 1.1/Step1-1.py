@@ -81,18 +81,24 @@ def four():
             print("Invalid choice. Please enter 1 for a circle or 2 for a rectangle.")
 
 def five():
-    print('''What are arrays, strings?
+    print('''
+What are arrays, strings?
             
 Arrays:
-Arrays are collections of elements of the same type, accessible via indices. They allow efficient storage and retrieval of multiple values under a single variable name. In Python, lists often serve as arrays.
+Arrays are collections of elements of the same type, accessible via indices. 
+They allow efficient storage and retrieval of multiple values under a single variable name. 
+In Python, lists often serve as arrays.
 
 temperatures = [25, 28, 22, 30, 24]
 In this example, temperatures is an array representing daily temperatures.
 
-Strings are sequences of characters, used to represent textual information. They are immutable in many programming languages. Strings support operations like concatenation and slicing and are crucial for text processing.
+Strings are sequences of characters, used to represent textual information. 
+They are immutable in many programming languages. Strings support operations like concatenation 
+and slicing and are crucial for text processing.
 
 message = "Hello, World!"
-Here, message is a string containing a greeting.''')
+Here, message is a string containing a greeting.
+          ''')
     
 def six():
     def iter(n):
@@ -186,7 +192,7 @@ print("""\nThis program have basic problems.
 
 while True:
     option = input("\nEnter from 1 to 9 or '0' to exit or \'helpme\' for help\n")
-    # print()
+    
     if option.lower() == 'helpme':
         helpme()
     else:

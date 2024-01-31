@@ -8,6 +8,7 @@ def one():
                 print('\n',end="")
         
     n = int(input())
+    print()
     star(n)
 
 def two():
@@ -18,6 +19,7 @@ def two():
             print('\n', end='')
 
     n = int(input())
+    print()
     star(n)
 
 def three():
@@ -29,6 +31,7 @@ def three():
 
 
     n = int(input())
+    print()
     star(n)
 
 def four():
@@ -39,6 +42,7 @@ def four():
             print('\n', end='')
 
     n = int(input())
+    print()
     star(n)
 
 def five():
@@ -50,6 +54,7 @@ def five():
             print('\n',end='')   
     
     n = int(input())
+    print()
     star(n)
 
 def six():
@@ -61,6 +66,7 @@ def six():
             print()
             a -=1
     n = int(input())
+    print()
     star(n)
 
 def seven():
@@ -77,6 +83,7 @@ def seven():
             b+=2
 
     n = int(input())
+    print()
     star(n)
 
 def eight():
@@ -93,6 +100,7 @@ def eight():
             star-=2
 
     n = int(input())
+    print()
     star(n)
 
 def nine():
@@ -122,6 +130,7 @@ def nine():
             star2-=2
 
     n = int(input())
+    print()
     star(n)
 
 def ten():
@@ -140,6 +149,7 @@ def ten():
             star-=1
 
     n = int(input())
+    print()
     star(n)
 
 def eleven():
@@ -152,6 +162,7 @@ def eleven():
             star +=1
 
     n = int(input())
+    print()
     star(n)
 
 def twelve():
@@ -180,6 +191,7 @@ def twelve():
             gap-=2
 
     n = int(input())
+    print()
     star(n)
 
 def thirteen():
@@ -194,6 +206,7 @@ def thirteen():
             num+=1
 
     n = int(input())
+    print()
     star(n)
 
 def fourteen():
@@ -207,6 +220,7 @@ def fourteen():
             num+=1
             print()
     n = int(input())
+    print()
     star(n)
 
 def fifteen():
@@ -221,6 +235,7 @@ def fifteen():
             num-=1
 
     n = int(input())
+    print()
     star(n)
 
 def sixteen():
@@ -231,6 +246,7 @@ def sixteen():
             print()
 
     n = int(input())
+    print()
     star(n)
 def seventeen():
     def star(n):
@@ -263,6 +279,7 @@ def seventeen():
             print()
 
     n = int(input())
+    print()
     star(n)
 
 def eighteen():
@@ -273,6 +290,7 @@ def eighteen():
             print()
 
     n = int(input())
+    print()
     star(n)
 
 def nineteen():
@@ -292,6 +310,7 @@ def nineteen():
             print()
 
     n = int(input())
+    print()
     star(n)
 
 def twenty():
@@ -316,6 +335,7 @@ def twenty():
             print()
 
     n = int(input())
+    print()
     star(n)
 
 def twenty_one():
@@ -330,6 +350,7 @@ def twenty_one():
             print()
 
     n = int(input())
+    print()
     star(n)
 
 def twenty_two():
@@ -344,57 +365,115 @@ def twenty_two():
             print()
 
     n = int(input())
+    print()
     star(n)
 
-while True:
-    option = (input("Enter from 1 to 22 or 0 to exit\n"))
+def helpme():
+    print("""
+    1 - Grid of Stars or a 3x3 Grid
+    2 - Right-angled Triangle or a Staircase
+    3 - Number Triangle or a Right-angled Number Triangle
+    4 - Number Triangle or a Right-angled Number Triangle (Each row same Number)
+    5 - Inverted Right-angled Triangle or an Upside-down Right-angled Triangle
+    6 - Inverted Number Triangle or a Decreasing Number Triangle
+    7 - Isosceles Triangle or a Pyramid
+    8 - Inverted Isosceles Triangle or an Inverted Pyramid
+    9 - Double-Sided Pyramid or an Hourglass Pattern
+    10 - Diamond Pattern or a Rhombus
+    11 - Binary Triangle or a Binary Alternating Pattern
+    12 - Number Crown
+    13 - Number Triangle or a Right-angled Number Triangle
+    14 - Alphabetic Triangle or a Right-angled Alphabetic Triangle
+    15 - Inverted Alphabetic Triangle or an Upside-down Alphabetic Triangle
+    16 - Repeated Alphabetic Triangle or a Staircase Alphabetic Pattern
+    17 - Diamond Alphabetic Pattern or a Mirror Image Alphabetic Diamond
+    18 - Inverted Alphabetic Triangle or an Upside-down Alphabetic Triangle
+    19 - Hollow Diamond or a Diamond with Spaces
+    20 - Symmetry Pattern
+    21 - Square or a Box
+    22 - Number Diamond or a Symmetric Numeric Pattern
+          """)
 
-    if option == 0:
-        print("Exited the program.")
-        break
-    elif option == 1:
-        one()
-    elif option == 2:
-        two()
-    elif option == 3:
-        three()
-    elif option == 4:
-        four()
-    elif option == 5:
-        five()
-    elif option == 6:
-        six()
-    elif option == 7:
-        seven()
-    elif option == 8:
-        eight()
-    elif option == 9:
-        nine()
-    elif option == 10:
-        ten()
-    elif option == 11:
-        eleven()
-    elif option == 12:
-        twelve()
-    elif option == 13:
-        thirteen()
-    elif option == 14:
-        fourteen()
-    elif option == 15:
-        fifteen()
-    elif option == 16:
-        sixteen()
-    elif option == 17:
-        seventeen()
-    elif option == 18:
-        eighteen()
-    elif option == 19:
-        nineteen()
-    elif option == 20:
-        twenty()
-    elif option == 21:
-        twenty_one()
-    elif option == 22:
-        twenty_two()
+print("""
+    1 - Grid of Stars or a 3x3 Grid
+    2 - Right-angled Triangle or a Staircase
+    3 - Number Triangle or a Right-angled Number Triangle
+    4 - Number Triangle or a Right-angled Number Triangle (Each row same Number)
+    5 - Inverted Right-angled Triangle or an Upside-down Right-angled Triangle
+    6 - Inverted Number Triangle or a Decreasing Number Triangle
+    7 - Isosceles Triangle or a Pyramid
+    8 - Inverted Isosceles Triangle or an Inverted Pyramid
+    9 - Double-Sided Pyramid or an Hourglass Pattern
+    10 - Diamond Pattern or a Rhombus
+    11 - Binary Triangle or a Binary Alternating Pattern
+    12 - Number Crown
+    13 - Number Triangle or a Right-angled Number Triangle
+    14 - Alphabetic Triangle or a Right-angled Alphabetic Triangle
+    15 - Inverted Alphabetic Triangle or an Upside-down Alphabetic Triangle
+    16 - Repeated Alphabetic Triangle or a Staircase Alphabetic Pattern
+    17 - Diamond Alphabetic Pattern or a Mirror Image Alphabetic Diamond
+    18 - Inverted Alphabetic Triangle or an Upside-down Alphabetic Triangle
+    19 - Hollow Diamond or a Diamond with Spaces
+    20 - Symmetry Pattern
+    21 - Square or a Box
+    22 - Number Diamond or a Symmetric Numeric Pattern
+          """)
+
+while True:
+    option = input("\nEnter from 1 to 22 or '0' to exit or \'helpme\' for help\n")
+    
+    if option.lower() == 'helpme':
+        helpme()
+    else:
+        if int(option) == 0:
+            print("Exited the Program")
+            break
+        elif int(option) == 1:
+            one()
+        elif int(option) == 2:
+            two()
+        elif int(option) == 3:
+            three()
+        elif int(option) == 4:
+            four()
+        elif int(option) == 5:
+            five()
+        elif int(option) == 6:
+            six()
+        elif int(option) == 7:
+            seven()
+        elif int(option) == 8:
+            eight()
+        elif int(option) == 9:
+            nine()
+        elif int(option) == 10:
+            ten()
+        elif int(option) == 11:
+            eleven()
+        elif int(option) == 12:
+            twelve()
+        elif int(option) == 13:
+            thirteen()
+        elif int(option) == 14:
+            fourteen()
+        elif int(option) == 15:
+            fifteen()
+        elif int(option) == 16:
+            sixteen()
+        elif int(option) == 17:
+            seventeen()
+        elif int(option) == 18:
+            eighteen()
+        elif int(option) == 19:
+            nineteen()
+        elif int(option) == 20:
+            twenty()
+        elif int(option) == 21:
+            twenty_one()
+        elif int(option) == 22:
+            twenty_two()
+        else:
+            print("Invalid option. Please enter a number from 1 to 22.")
+        
 
 
