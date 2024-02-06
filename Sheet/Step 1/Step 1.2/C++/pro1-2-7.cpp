@@ -5,25 +5,26 @@ int main()
 {
     int a = 5;
 
-for (int row = 0; row < a; row++){//row to input
+    for (int row = 0; row < a; row++)
+    {
 
-    //for space
-    for (int col = 0; col < a-row-1; col++) {
-        cout<< " ";
-    }
-    
-    //for space
-    for (int col = 0; col < 2*row+1; col++) {
-        cout<< "*";
+        // spaces
+        for (int col = 0; col < a - row - 1; col++)
+        {
+            cout << " ";
+        }
+        // stars
+        for (int col = 0; col < 2 * row + 1; col++)
+        {
+            cout << "*";
+        }
+        // spaces
+        for (int col = 0; col < a - row - 1; col++)
+        {
+            cout << " ";
+        }
+        cout << endl;
     }
 
-    //for space
-    for (int col = 0; col < a-row-1; col++) {
-        cout<< " ";
-    }
-    cout<< endl;
-
-    
-}
-    
+    return 0;
 }
