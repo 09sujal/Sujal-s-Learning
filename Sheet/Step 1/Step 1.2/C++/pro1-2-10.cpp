@@ -5,24 +5,24 @@ int main()
 {
     int a = 5;
 
-    for (int row = 0; row < a; row++)
+    for (int row = 0; row < a; row++) // row to less than input
     {
-        for (int col = 0; col <= row; col++)
+        for (int col = 0; col <= row; col++) // col to row
         {
-            cout << "*";
+            cout << "*"; // print star
         }
 
-        cout << endl;
+        cout << endl; // for new line
     }
 
-    for (int row = a; row > 0; row--)
+    for (int row = a; row > 0; row--) // row to 0, post decrementation
     {
-        for (int col = 1; col < row; col++)
+        for (int col = 1; col < row; col++) // col to less than row
         {
-            cout << "*";
+            cout << "*"; // print star
         }
 
-        cout << endl;
+        cout << endl; // for new line
     }
 
     return 0;
