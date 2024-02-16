@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int one(int n)
+int ptrn1(int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -13,7 +13,7 @@ int one(int n)
     }
 }
 
-int two(int n)
+int ptrn2(int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -25,7 +25,7 @@ int two(int n)
     }
 }
 
-int three(int n)
+int ptrn3(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -37,7 +37,7 @@ int three(int n)
     }
 }
 
-int four(int n)
+int ptrn4(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -49,7 +49,7 @@ int four(int n)
     }
 }
 
-int five(int n)
+int ptrn5(int n)
 {
     for (int i = n; i >= 1; i--)
     {
@@ -61,7 +61,7 @@ int five(int n)
     }
 }
 
-int six(int n)
+int ptrn6(int n)
 {
     for (int i = n; i >= 1; i--)
     {
@@ -73,7 +73,7 @@ int six(int n)
     }
 }
 
-int seven(int n)
+int ptrn7(int n)
 {
 
     for (int i = 0; i < n; i++)
@@ -94,7 +94,7 @@ int seven(int n)
     }
 }
 
-int eight(int n)
+int ptrn8(int n)
 {
 
     for (int i = 0; i < n; i++)
@@ -115,7 +115,7 @@ int eight(int n)
     }
 }
 
-int nine(int n)
+int ptrn9(int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -152,25 +152,123 @@ int nine(int n)
     }
 }
 
-int ten(int n)
+int ptrn10(int n)
 {
-    for(int i = 1; i <= n; i++){
-        for(int j = 0; j < i; j++){
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
             cout << "*";
         }
         cout << endl;
     }
-    for(int i = n; i >= 1; i--){
-        for(int j = 1; j < i; j++){
+    for (int i = n; i >= 1; i--)
+    {
+        for (int j = 1; j < i; j++)
+        {
             cout << "*";
         }
         cout << endl;
     }
 }
+
+int ptrn11(int n)
+{
+    int num1 = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        int num2 = 1;
+        for (int j = 0; j < i; j++)
+        {
+            num2 = (i + j) & 1;
+            cout << num2 << " ";
+        }
+        cout << endl;
+    }
+}
+
+int ptrn12(int n)
+{
+    int spaces = 2 * (n - 1);
+
+    for (int i = 1; i <= n; i++)
+    {
+
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
+        }
+        for (int j = 1; j <= spaces; j++)
+        {
+            cout << " ";
+        }
+        for (int j = i; j >= 1; j--)
+        {
+            cout << j;
+        }
+        cout << endl;
+        spaces -= 2;
+    }
+}
+
+int ptrn13(int n)
+{
+    int num = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << num << " ";
+            num++;
+        }
+        cout << endl;
+    }
+}
+
+int ptrn14(int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = 'A'; ch <= 'A' + i; ch++)
+        {
+            cout << ch;
+        }
+        cout << endl;
+    }
+}
+
+int ptrn15(int n)
+{
+
+    for (int i = n; i >= 1; i--)
+    {
+        for (char ch = 'A'; ch < 'A' + i; ch++)
+        {
+            cout << ch;
+        }
+        cout << endl;
+    }
+}
+
+int ptrn16(int n)
+{
+    char ch = 'A';
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            cout << ch;
+        }
+        cout << endl;
+        ch++;
+    }
+}
+
 int main()
 {
     int a = 5;
-    ten(a);
+    ptrn16(a);
 
     return 0;
 }
