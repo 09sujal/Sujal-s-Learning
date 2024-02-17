@@ -265,10 +265,42 @@ int ptrn16(int n)
     }
 }
 
+int ptrn17(int n)
+{
+    char ch = 'A';
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        char ch = 'A';
+        int bp = (2 * i + 1) / 2;
+        for (int j = 1; j <= 2 * i + 1; j++)
+        {
+            cout << ch;
+            if (j <= bp)
+            {
+                ch++;
+            }
+            else
+            {
+                ch--;
+            }
+        }
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        cout << endl;
+        ch++;
+    }
+}
+
 int main()
 {
     int a = 5;
-    ptrn16(a);
+    ptrn17(a);
 
     return 0;
 }
