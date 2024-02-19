@@ -310,10 +310,141 @@ int ptrn18(int n)
         cout << endl;
     }
 }
+
+int ptrn19(int n)
+{
+    int inis = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << "*";
+        }
+
+        for (int j = 0; j < inis; j++)
+        {
+            cout << " ";
+        }
+
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl;
+        inis += 2;
+    }
+
+    inis = (2 * n - 2);
+
+    for (int i = 1; i <= n; i++)
+    {
+
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+
+        for (int j = 0; j < inis; j++)
+        {
+            cout << " ";
+        }
+
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl;
+        inis -= 2;
+    }
+}
+
+int ptrn20(int n)
+{
+
+    int spaces = 2 * n - 2;
+
+    for (int i = 1; i <= 2 * n - 1; i++)
+    {
+
+        int star = i;
+
+        if (i > n)
+        {
+            star = 2 * n - i;
+        }
+
+        for (int j = 1; j <= star; j++)
+        {
+            cout << "*";
+        }
+
+        for (int j = 1; j <= spaces; j++)
+        {
+            cout << " ";
+        }
+
+        for (int j = 1; j <= star; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl;
+        if (i < n)
+        {
+            spaces -= 2;
+        }
+        else
+        {
+            spaces += 2;
+        }
+    }
+}
+
+int ptrn21(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+
+        for (int j = 0; j < n; j++)
+        {
+            if (i == 0 || j == 0 || i == n - 1 || j == n - 1)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+int ptrn22(int n)
+{
+    for (int i = 0; i < 2 * n - 1; i++)
+    {
+        for (int j = 0; j < 2 * n - 1; j++)
+        {
+
+            int t = i;
+            int b = j;
+            int r = (2 * n - 2) - j;
+            int l = (2 * n - 2) - i;
+
+            cout << (n - min(min(t, b), min(l, r)));
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     int a = 5;
-    ptrn18(a);
+    ptrn21(a);
 
     return 0;
 }
