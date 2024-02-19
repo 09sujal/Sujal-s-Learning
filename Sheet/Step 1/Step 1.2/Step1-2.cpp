@@ -267,15 +267,18 @@ int ptrn16(int n)
 
 int ptrn17(int n)
 {
-    char ch = 'A';
+
     for (int i = 0; i < n; i++)
     {
+
         for (int j = 0; j < n - i - 1; j++)
         {
             cout << " ";
         }
+
         char ch = 'A';
         int bp = (2 * i + 1) / 2;
+
         for (int j = 1; j <= 2 * i + 1; j++)
         {
             cout << ch;
@@ -293,14 +296,24 @@ int ptrn17(int n)
             cout << " ";
         }
         cout << endl;
-        ch++;
     }
 }
 
+int ptrn18(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = ('A' + n - 1) - i; ch <= ('A' + n - 1); ch++)
+        {
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int a = 5;
-    ptrn17(a);
+    ptrn18(a);
 
     return 0;
 }
