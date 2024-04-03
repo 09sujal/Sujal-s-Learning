@@ -1,26 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-  
-    int n, e, o, l;
+int main()
+{
+    int n;
     cin >> n;
 
-    e = 0; o = 0;
+    int last, even = 0, odd = 0;
 
-    while (n > 0){
-        l = n%10;
+    while (n > 0)
+    {
+        last = n % 10;
 
-        if (l%2 == 0){
-            e += l;
+        if (last % 2 == 0)
+        {
+            even += last;
         }
-        else {
-            o +=l;
+        else
+        {
+            odd += last;
         }
-        n /= 10;
+        n = n / 10;
     }
-    
-    cout<< e << " " << o << endl;
-
+    cout << "even : " << even << "\nodd : " << odd << endl;
     return 0;
 }

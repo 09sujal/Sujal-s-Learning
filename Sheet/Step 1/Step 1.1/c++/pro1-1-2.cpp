@@ -3,28 +3,33 @@ using namespace std;
 
 int main()
 {
-     string type;
 
-     cin >> type;
+   string a;
+   cin >> a;
 
-     if (type == "Integer"){
-        cout << "4 bytes";
-     }
-     else if (type == "Long"){
-        cout << "8 bytes";
-     }
-     else if (type == "Float"){
-        cout << "4 bytes";
-     }
-     else if (type == "Double"){
-        cout << "8 bytes";
-     }
-     else if (type == "Character"){
-        cout << "1 bytes";
-     }
-     else {
-        cout << "invalid Input";
-     }
-     
-    return 0;
+   if (a == "Integer")
+   {
+      cout << 4;
+   }
+   else if (a == "Long")
+   {
+      cout << 8;
+   }
+   else if (a == "Float")
+   {
+      cout << 4;
+   }
+   else if (a == "Double")
+   {
+      cout << 8;
+   }
+   else if (a == "Character")
+   {
+      cout << 1;
+   }
+   else
+   {
+      cout << "Invalid" << endl;
+   }
+   return 0;
 }

@@ -3,22 +3,25 @@ using namespace std;
 
 int main()
 {
-    int a, b;
 
+    int a, b;
     cin >> a >> b;
 
     if (a > b)
     {
-        cout << "greater";
+        cout << "Greater";
     }
-    else if (b > a)
+    else if (a < b)
     {
-        cout << "smaller";
+        cout << "Lesser";
+    }
+    else if (a == b)
+    {
+        cout << "Equal";
     }
     else
     {
-        cout << "equal";
+        cout << "Invalid";
     }
-
     return 0;
 }

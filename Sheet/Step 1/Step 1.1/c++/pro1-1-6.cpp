@@ -1,29 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int iterativeFibonacci(int n) {
-    if (n <= 1) {
-        return n;
-    }
+int main()
+{
 
-    int prev = 0;
-    int current = 1;
-
-    for (int i = 2; i <= n; ++i) {
-        int temp = current;
-        current += prev;
-        prev = temp;
-    }
-
-    return current;
-}
-
-int main() {
-  
     int n;
     cin >> n;
 
-    cout << iterativeFibonacci(n) << endl;
+    int temp;
+    int pre = 0;
+    int cur = 1;
 
+    if (n <= 1)
+    {
+        return n;
+    }
+
+    for (int i=2; i <= n; ++i)
+    {
+        temp = cur;
+        cur+=pre;
+        pre=temp;
+    }
+    cout << cur;
     return 0;
 }
